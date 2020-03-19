@@ -1,0 +1,13 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: 06-netflix-eureka-naming-server
+
+eureka:
+  client:
+#    here we indicates this service itself should not be registered in eureka naming server
+    register-with-eureka: false
+#    again this client should not fetch eureka registry information
+    fetch-registry: false
