@@ -9,5 +9,5 @@ eureka:
   client:
 #    here we indicates this service itself should not be registered in eureka naming server
     register-with-eureka: false
-#    again this client should not fetch eureka registry information
+#    again this client ( because this is eureka server - not client ) should not fetch eureka registry information
     fetch-registry: false
